@@ -3,4 +3,4 @@
 	url = git://git.yoctoproject.org/poky
 [submodule "meta-ivi"]
 	path = meta-ivi
-	url = git://git.yoctoproject.org/meta-ivi
+	url = git@github.com:jbroadus/meta-ivi.git
