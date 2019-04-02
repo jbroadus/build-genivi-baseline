@@ -1,0 +1,11 @@
+#!/bin/bash
+
+THISDIR=$(realpath $(dirname "${BASH_SOURCE[0]}"))
+
+IMAGE=horizon-image
+MACHINE=vexpressa9
+
+RUNQEMU="$THISDIR/meta-ivi/scripts/runqemu"
+
+source poky/oe-init-build-env
+$RUNQEMU $IMAGE $MACHINE
