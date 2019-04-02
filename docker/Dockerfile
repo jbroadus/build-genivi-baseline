@@ -2,8 +2,7 @@ FROM debian:jessie-20190326
 
 RUN apt-get update
 RUN apt-get install -y locales locales-all
-RUN apt-get install -y --no-install-recommends python
-RUN apt-get install -y --no-install-recommends python3
+RUN apt-get install -y --no-install-recommends asciidoc
 RUN apt-get install -y --no-install-recommends binutils
 RUN apt-get install -y --no-install-recommends bzip2
 RUN apt-get install -y --no-install-recommends chrpath
@@ -19,6 +18,8 @@ RUN apt-get install -y --no-install-recommends make
 RUN apt-get install -y --no-install-recommends patch
 RUN apt-get install -y --no-install-recommends perl
 RUN apt-get install -y --no-install-recommends procps
+RUN apt-get install -y --no-install-recommends python
+RUN apt-get install -y --no-install-recommends python3
 RUN apt-get install -y --no-install-recommends ssh
 RUN apt-get install -y --no-install-recommends texinfo
 RUN apt-get install -y --no-install-recommends wget
